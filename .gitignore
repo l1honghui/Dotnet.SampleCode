@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/SampleCode
+/src/JwtSample/obj
+/src/MvcCookieSample/obj
+/src/SampleCode/bin
+/src/SampleCode/obj
+/src/SampleCode.Tests/obj
+/src/SampleCode.Tests/bin
