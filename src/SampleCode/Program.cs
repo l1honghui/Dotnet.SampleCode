@@ -7,24 +7,17 @@ namespace SampleCode
     {
         public static void Main()
         {
-            SystemInfos.SystemInfo.PrintSystemInfo();
+            RegexSample.RegexSampleMatch.GetServerConfig(
+                "host=172.16.0.175:5672;username=guest;password=guest;");
 
             Console.ReadKey();
         }
+
         public static void WriteLine(object obj)
         {
             Console.WriteLine(obj);
         }
 
-        /// <summary> 
-        /// 获取时间戳 10位
-        /// </summary> 
-        /// <returns></returns> 
-        public static long GetTimeStampTen()
-        {
-            return (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
-        }
-       
     }
 
 }
