@@ -8,7 +8,7 @@ namespace SampleCode
         public static void Main()
         {
             RegexSample.RegexSampleMatch.GetServerConfig(
-                "host=172.16.0.175:5672;username=guest;password=guest;");
+                "host=127.0.0.1:5000;username=guest;password=guest;");
 
             Console.ReadKey();
         }
