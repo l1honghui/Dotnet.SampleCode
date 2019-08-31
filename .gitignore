@@ -2,8 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.idea/
 /.vs/SampleCode
+/src/JwtSample/bin
 /src/JwtSample/obj
+/src/MvcCookieSample/bin
 /src/MvcCookieSample/obj
 /src/SampleCode/bin
 /src/SampleCode/obj
