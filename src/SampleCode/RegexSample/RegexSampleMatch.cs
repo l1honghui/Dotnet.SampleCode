@@ -1,15 +1,19 @@
-﻿namespace SampleCode.RegexSample
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace SampleCode.RegexSample
 {
     using System.Text.RegularExpressions;
     public class RegexSampleMatch
     {
         /// <summary>
-        ///
+        ///    获取服务器配置信息
         /// </summary>
         /// <param name="connectionString"></param>
         public static ServerConfig GetServerConfig(string connectionString)
         {
-            //host=172.16.0.175:5672;username=guest;password=guest;
+            //connectionString = "host=127.0.0.1:5000;username=guest;password=guest;"
             if (string.IsNullOrEmpty(connectionString)) return null;
             ServerConfig server = new ServerConfig();
             var hostNamePattern = @"host=([^;]+)";
@@ -36,6 +40,28 @@
             }
 
             return server;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="placeHolderDic"></param>
+        /// <returns></returns>
+        public static string GetFormatString(string source, Dictionary<string,string> placeHolderDic)
+        {
+            var pattern = "{{([a-zA-Z]+)}}";
+            
+            var result = Regex.Replace(source, pattern, match =>
+            {
+                var paramName = match.Groups[1].ToString();
+                if (placeHolderDic.Keys.Any(e=> e == paramName))
+                    return placeHolderDic[paramName];
+                
+                throw new ArgumentException("占位符匹配字典中不存在此占位符");
+            });
+
+            return result;
         }
 
     }
