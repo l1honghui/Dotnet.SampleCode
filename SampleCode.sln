@@ -17,9 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcCookieSample", "src\MvcC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aop", "Aop", "{F5297784-A001-4851-BD55-5E91495A328C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aop.AspnetCore", "AspectCoreDemo\Aop.AspnetCore.csproj", "{C84607C7-D2B9-477D-8B76-8F57671ACC43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aop.AspnetCore", "src\AspectCoreDemo\Aop.AspnetCore.csproj", "{C84607C7-D2B9-477D-8B76-8F57671ACC43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aop.AspnetCore.Demo", "Aop.AspnetCore\Aop.AspnetCore.Demo.csproj", "{98ED3694-30A3-4E88-863D-A8AE420695B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aop.AspnetCore.Demo", "src\Aop.AspnetCore\Aop.AspnetCore.Demo.csproj", "{98ED3694-30A3-4E88-863D-A8AE420695B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
